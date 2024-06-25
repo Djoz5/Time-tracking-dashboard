@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Time tracking dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <section class="section1">
+                <div class="name-div">
+                    <img class="avatar" src="assets/images/image-jeremy.png"  alt="jeremy"></img>
+                    <div class="description-div">
+                       <p>Report for</p>
+                       <h1>Jeremy Robson</h1>
+                    </div>
+                </div>
+                <ul>
+                    <li onclick="dayBtn()">Daily</li>
+                    <li onclick="weekBtn()">Weekly</li>
+                    <li onclick="monthBtn()">Monthly</li>
+                </ul>
+            </section>
+
+            <div class="day-div">
+                <div class="card-div" id="work">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-work.svg" alt="icon-work"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Work</h2>
+                             <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>4hrs</h1>
+                          <p>Last Week - 5hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="play">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-play.svg" alt="icon-play"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Play</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>2hrs</h1>
+                          <p>Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="study">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-study.svg" alt="icon-study"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Study</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>1hrs</h1>
+                          <p>Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="exercise">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-exercise.svg" alt="icon-exercise"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Exercise</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>1hrs</h1>
+                          <p>Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="social">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-social.svg" alt="icon-social"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Social</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>2hrs</h1>
+                          <p>Last Week - 3hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="self-care">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-self-care.svg" alt="icon-self-care"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Self Care</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>1hrs</h1>
+                          <p>Last Week - 1hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-div">
+                <div class="card-div" id="work">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-work.svg" alt="icon-work"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Work</h2>
+                             <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>32hrs</h1>
+                          <p>Last Week - 36hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="play">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-play.svg" alt="icon-play"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Play</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>10hrs</h1>
+                          <p>Last Week - 8hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="study">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-study.svg" alt="icon-study"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Study</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>4hrs</h1>
+                          <p>Last Week - 7hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="exercise">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-exercise.svg" alt="icon-exercise"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Exercise</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>4hrs</h1>
+                          <p>Last Week - 5hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="social">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-social.svg" alt="icon-social"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Social</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>5hrs</h1>
+                          <p>Last Week - 10hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="self-care">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-self-care.svg" alt="icon-self-care"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Self Care</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>2hrs</h1>
+                          <p>Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="month-div">
+                <div class="card-div" id="work">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-work.svg" alt="icon-work"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Work</h2>
+                             <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>128hrs</h1>
+                          <p>Last Week - 140hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="play">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-play.svg" alt="icon-play"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Play</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>40hrs</h1>
+                          <p>Last Week - 32hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="study">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-study.svg" alt="icon-study"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Study</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>16hrs</h1>
+                          <p>Last Week - 28hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="exercise">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-exercise.svg" alt="icon-exercise"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Exercise</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>16hrs</h1>
+                          <p>Last Week - 20hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="social">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-social.svg" alt="icon-social"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Social</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>20hrs</h1>
+                          <p>Last Week - 40hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div" id="self-care">
+                    <div class="img-div">
+                        <img class="icon" src="assets/images/icon-self-care.svg" alt="icon-self-care"></img>
+                    </div>
+                    <div class="card-content">
+                        <div class="title-and-btn">
+                            <h2>Self Care</h2>
+                            <img alt="ellipsis" class="ellipsis" src="assets/images/icon-ellipsis.svg"></img>
+                        </div>
+                        <div class="time-div">
+                          <h1>8hrs</h1>
+                          <p>Last Week - 8hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
